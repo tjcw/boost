@@ -393,6 +393,9 @@ option.set includedir : $INCLUDEDIR ;
 option.set keep-going : false ;
 EOF
 
+# Fix up the UTF8 test (AIX does not support utf8 file/dir names)
+cp -r libs/wave/test/testwave/testfiles/utf8-test libs/wave/test/testwave/testfiles/utf8-test-ßµ™∃
+
 cat << EOF
 
 Bootstrapping is done. To build, run:
