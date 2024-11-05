@@ -58,6 +58,9 @@ ECHO. >> project-config.jam
 ECHO option.set keep-going : false ; >> project-config.jam
 ECHO. >> project-config.jam
 
+mkdir libs\wave\test\testwave\testfiles\utf8-test-ßµ™∃
+copy libs\wave\test\testwave\testfiles\utf8-test\file.hpp libs\wave\test\testwave\testfiles\utf8-test-ßµ™∃\file.hpp
+
 ECHO.
 ECHO Bootstrapping is done. To build, run:
 ECHO.
